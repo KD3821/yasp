@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Сделать Screenshot</title>
+</head>
+<body>
+    <form action="{% url 'scan' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <button type="submit" value="Upload File">JustDoIt!</button>
+    </form>
+</body>
+</html>
